@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+    <div class="bg">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Currency exchange rates</li>
+                <li>Images</li>
+                <li>About</li>
+                <li>Contact us</li>
+
+            </ul>
+        </nav>
+        <header>
+            <img src="vector-logo-currency-exchange-PM8WH9.jpg" height="25px" width="35px">
+            <div class="heading">
+                Currency Convertor
+            </div>
+        </header>
+    </div>
+
+    <!-- <div class="tagline">
+
+    </div> -->
+        <main>
+
+    <div class="input">
+        <div class="label1">
+            <label for="Source_Currency" id="Source_label">Select the input currency </label>
+            <select name="" id="Source_Currency" onchange="animate1(), animate2()"></select>
+            <!-- <option value="default" selected>Select an option</option> -->
+        </div>
+
+        <div class="label2 ">
+            <label for="To_Currency" id="To_label">Select the currency you want to change the input into</label>
+            <select name="" id="To_Currency" onchange="animate3(), animate4()"></select>
+            <!-- <option value="default" selected>Select an option</option> -->
+        </div>
+
+        <div class="input_value">
+            <label for="Source_Value">Enter the amount you want to convert</label>
+            <input type="number" id="Source_Value" oninput="Converting_Currency(),animate5(),animate6(),animate7(),animate8()">
+        </div>
+    </div>
+
+    <div class="output">
+        The Converted value is
+        <div class="converted"></div> 
+    </div>
+    <div class="CurrencyRates">Exchange Rate
+        <div class="boxlast"></div>
+    </div>
+    </main>
+
+    <div class="line"></div>
+
+    <footer>
+        <div class="heading">Frequently Asked Questions</div>
+        <div class="faqbox">
+            <div id= "faq1" class="questions" >What is currency? <img src="plus.svg" alt="" id ="plus1"></div>
+            <div id= "faq2" class="questions" >What is currency conversion rate? <img src="plus.svg" alt="" id ="plus2"></div>
+            <div id= "faq3" class="questions">What is exchange rate? <img src="plus.svg" alt="" id ="plus3"></div>
+            <div id= "faq4" class="questions" >Why do currency conversion rates differ between countries? <img src="plus.svg" alt="" id ="plus4"></div>
+            <div id= "faq5" class="questions" >How does this currency converter work? <img src="plus.svg" alt="" id ="plus5"></div>
+            
+        </div>
+    </footer>
+
+    <script src="currency.js"></script>
+</body>
+
+</html>

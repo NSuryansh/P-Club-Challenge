@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    background-color: rgb(241 235 231);
+}
+.bg {
+    background-color: rgb(249, 227, 208);
+}
+
+nav {
+    background-color: rgb(249, 116, 152);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    padding: 5px 5px;
+    border-bottom-left-radius: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+
+}
+
+img {
+    border-radius: 30px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid brown;
+}
+
+.heading {
+    position: relative;
+    top: 13px;
+    left: 50px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+}
+main{
+    position: relative;
+    top: 80px;
+    height: 60vh;
+   
+}
+.line{
+    border: 2px solid brown
+}
+select {
+    border: 2px solid black;
+    border-radius: 30px;
+    width:80px;
+    /* animation: for_button 10s ; */
+}
+
+button {
+    border: 2px solid black;
+    width: 55px;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px;
+    
+}
+.label1 {
+    background-color: chartreuse;
+    padding-left: 5%;
+    display: flex;
+    gap: 34px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    animation-name: example;
+    animation-duration: 5s;
+   
+}
+.label2{
+    /* background-color:chartreuse; */
+    padding-left: 5%;
+    display: flex;
+    gap: 34px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    /* animation-name: example;
+    animation-duration: 5s; */
+    color:  rgb(241 235 231);
+    background-color:  rgb(241 235 231); 
+}
+.input_value{
+    /* background-color:aqua; */
+    padding-left: 5%;
+    display: flex;
+    gap: 34px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    color:  rgb(241 235 231);
+    background-color:  rgb(241 235 231); 
+}
+#To_label{
+    position: relative;
+    left: -74px;
+}
+#To_Currency{
+    position: relative;
+    left: -74px;
+    background-color:  rgb(241 235 231);
+    border-color:  rgb(241 235 231)
+}
+#Source_Currency{
+    animation: for_button 10s ;
+}
+.tagline{
+    height: 200px;
+}
+.output{
+    /* margin-left: 10px; */
+    /* background-color:aqua; */
+    padding-left: 5%;
+    display: flex;
+    gap: 34px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    background-color:rgb(241 235 231) ;
+    color: rgb(241 235 231);
+}
+.converted{
+    width: 200px;
+    border: 2px solid black;
+    height: 38px;
+    background-color: white;
+    border-radius: 5px;
+    left: 47px;
+    position: relative;
+    background-color:rgb(241 235 231) ;
+    border-color: rgb(241 235 231);
+}
+.CurrencyRates{
+    background-color:#ef00ff;
+    position: relative;
+    top: 20px;
+    padding-left: 5%;
+    display: flex;
+    gap: 34px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    background-color:rgb(241 235 231) ;
+    color: rgb(241 235 231);
+
+}
+.boxlast{
+    width: 200px;
+    border: 2px solid black;
+    height: 38px;
+    background-color: white;
+    border-radius: 5px;
+    left: 67px;
+    position: relative;
+    background-color:rgb(241 235 231) ;
+    border-color: rgb(241 235 231);
+}
+#Source_Value{
+    position: relative;
+    left: 5px;
+    background-color:rgb(241 235 231) ;
+    border-color: rgb(241 235 231);
+}
+.boxes{
+    border: 2px solid black;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+    margin: 5px;
+   background-color:white;
+    /* color: white; */
+}
+
+@keyframes example {
+    from 
+    {color:  rgb(241 235 231);
+     background-color:  rgb(241 235 231);   
+    }
+    to {
+        color: black;
+        background-color: chartreuse;
+    }
+  }
+@keyframes for_button {
+    from{
+        background-color:  rgb(241 235 231);
+        border-color:  rgb(241 235 231);
+    }
+    to{background-color: white;
+    border-color: black;
+    }
+}
+
+
+.heading {
+    font-size: 50px;
+    font-family: 'Martel sans', sans-serif;
+    font-weight: bolder;
+    /* margin-top: 60px; */
+    margin-bottom: 25px;
+    position: relative;
+    left: 130px;
+    width: 80vw;
+}
+
+.faqbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    position: relative ;
+    left: 150px;
+    width: 80vw;
+    /* justify-content: center; */
+}
+
+.questions {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    background-color: rgba(128, 128, 128, 0.323);
+    height: 55px;
+    padding-left: 15px;
+    font-size: 25px;
+    justify-content: space-between;
+    padding-right: 20px;
+    /* cursor: pointer; */
+    position: relative;
+}
+
+.faqbox div img{
+    height: 25px;
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(249, 227, 208);
+    height: 600px;
+    text-align: center;
+}
+
+.additional-info {
+    display: none;
+    padding: 10px;
+    transform: translateY(25px);
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    border-radius: 5px;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    background-color: rgba(128, 128, 128, 0.323);
+    height: max-content;
+    padding-left: 15px;
+    font-size: 25px;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.tomove{
+    margin-bottom: 250px
+}
+.tomove2{
+    margin-bottom: 175px;
+}
+.tomove3{
+    margin-bottom: 175px;
+}
+.tomove4{
+    margin-bottom: 175px;
+}
+.tomove5{
+    margin-bottom: 150px;
+}
