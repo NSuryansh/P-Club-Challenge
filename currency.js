@@ -87,14 +87,7 @@ function Converting_Currency() {
         }
     }
 }
-// let menu = document.querySelector(".tagline")
-// allCurrencies.forEach(a => {
-//     let add = document.createElement("button")
-//     add.textContent = a
-//     add.setAttribute("onclick","GivingInput")
-//     add.classList.add("boxes")
-//     menu.append(add)
-// });
+
 function GivingInput(){
 
 }
@@ -244,19 +237,6 @@ function animate8(){
     };
 }
 
-
-// let faqbox1 = document.getElementById("plus1");
-
-// faqbox1.addEventListener("mouseover", (event) => {
-//     let newdiv = document.createElement("div");
-//     newdiv.innerText = "Hello, how are you doing?";
-//     event.target.appendChild(newdiv); 
-
-//     faqbox1.addEventListener("mouseleave", () => {
-//         newdiv.remove();
-//     });
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
     let plus1Image = document.getElementById("plus1");
     let toappened = document.getElementById("faq1")
@@ -265,13 +245,12 @@ document.addEventListener("DOMContentLoaded", function () {
         additionalInfo.innerText = "Currency is a medium of exchange for goods and services replacing the older barter system. In the older times, the exchange between goods and services had no proper foundation for valuing the traded goods and services. It is essentially money issued by the government and is an acceptable form of payment. The modern currency comprises paper and metals in the form of bills and coins. On their own, they are insignificant. The issuing authority and institutions that accept it provide the value; hence it is considered more stable. Countries have developed their currencies over the years based on their standard of living and cost of living.";
         additionalInfo.className = "additional-info";
         toappened.after(additionalInfo);
-        // toappened.className = "tomove";
         toappened.classList.add("tomove");
         additionalInfo.classList.add("tomove")
+        
         plus1Image.addEventListener("mouseout", function () {
             additionalInfo.remove();
             toappened.classList.remove("tomove")
-            // additionalInfo.classList.remove("tomove")
         });
     });
 });
@@ -281,10 +260,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let toappened = document.getElementById("faq2")
     plus1Image.addEventListener("mouseover", function () {
         let additionalInfo = document.createElement("div");
-        additionalInfo.innerText = "ClearTax currency converter will convert between all major currencies using the live exchange rate. With this converter, you can easily convert around 160 world currencies.For converting, simply enter the desired amount and select the source, destination currencies. The tool will automatically show you the converted amount and the historical exchange rate chart for the selected currency pair.";
+        additionalInfo.innerText = "Conversion rate is the ratio between two currencies defining the value of one currency to the other. It is useful in foreign exchange markets for trading purposes, hence why it often fluctuate The supply and demand of the currency dictate the conversion rate. That is why institutions such as the governments or the central banks implement policies to inflate or deflate the rates by increasing or decreasing the country's money supply.";
         additionalInfo.className = "additional-info";
         toappened.appendChild(additionalInfo);
-        // toappened.setAttribute = ("class","tomove");
         toappened.classList.add("tomove2");       
 
         plus1Image.addEventListener("mouseout", function () {
@@ -301,7 +279,6 @@ document.addEventListener("DOMContentLoaded", function () {
         additionalInfo.innerText = "The exchange rate is the cost of exchanging one currency for another. The rates are generally fluctuating due to economic and political factors. Economic factors are the economic policies implemented, trade balances, economic growth projects, and inflation. Political factors include how politically stable the region is to determine whether it is safe to trade or not.";
         additionalInfo.className = "additional-info";
         toappened.appendChild(additionalInfo);
-        // toappened.setAttribute = ("class","tomove");
         toappened.classList.add("tomove3");
       
         plus1Image.addEventListener("mouseout", function () {
@@ -319,7 +296,6 @@ document.addEventListener("DOMContentLoaded", function () {
         additionalInfo.innerText = "The currency conversion rates between countries differ because the rates can be floating or fixed. The fixed exchange rate is fixed with another currency. In contrast, the floating exchange rate is calculated based on supply and demand and macroeconomic factors. It depends on the country's government to follow which system suits them best. Then the monetary policies implemented dictate the conversion rate.";
         additionalInfo.className = "additional-info";
         toappened.appendChild(additionalInfo);
-        // toappened.setAttribute = ("class","tomove");
         toappened.classList.add("tomove4");
       
         plus1Image.addEventListener("mouseout", function () {
@@ -334,10 +310,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let toappened = document.getElementById("faq5")
     plus1Image.addEventListener("mouseover", function () {
         let additionalInfo = document.createElement("div");
-        additionalInfo.innerText = "ClearTax currency converter will convert between all major currencies using the live exchange rate. With this converter, you can easily convert around 160 world currencies.For converting, simply enter the desired amount and select the source, destination currencies. The tool will automatically show you the converted amount and the historical exchange rate chart for the selected currency pair.";
+        additionalInfo.innerText = "For converting, simply enter the desired amount and select the source, destination currencies. The tool will automatically show you the converted amount and the historical exchange rate chart for the selected currency pair.";
         additionalInfo.className = "additional-info";
         toappened.appendChild(additionalInfo);
-        // toappened.setAttribute = ("class","tomove");
         toappened.classList.add("tomove5");
       
         plus1Image.addEventListener("mouseout", function () {
@@ -355,7 +330,6 @@ document.addEventListener("DOMContentLoaded", function () {
         additionalInfo.innerText = "Hello, how are you doing?";
         additionalInfo.className = "additional-info";
         toappened.appendChild(additionalInfo);
-        // toappened.setAttribute = ("class","tomove");
         toappened.classList.add("tomove");
       
         plus1Image.addEventListener("mouseout", function () {
