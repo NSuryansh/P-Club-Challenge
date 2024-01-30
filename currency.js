@@ -100,7 +100,7 @@ function animate1() {
     ];
 
     const timingAppear = {
-        duration: 4000
+        duration: 3000
     };
 
     
@@ -123,7 +123,7 @@ function animate2(){
         }
      ]
      const timingAppear = {
-        duration: 4000
+        duration: 3000
     };
  
      let animation2 = animationTo2.animate(appear2,timingAppear)
@@ -140,7 +140,7 @@ function animate3(){
         {color:"black",backgroundColor:"aqua"}
     ]
     const timingAppear = {
-        duration: 4000
+        duration: 3000
     }
 
     let animation3 = animationTo3.animate(appear3,timingAppear)
@@ -157,7 +157,7 @@ function animate4(){
         {  backgroundColor: "white",borderColor: "black"  }
     ]
     const timingAppear = {
-        duration: 4000
+        duration: 3000
     }
 
     let animation4 = animationTo4.animate(appear4,timingAppear)
@@ -175,7 +175,7 @@ function animate4(){
             {color:"black",backgroundColor:"aqua"}
         ]
         const timingAppear = {
-            duration: 4000
+            duration: 3000
         }
     
         let animation5 = animationTo5.animate(appear5,timingAppear)
@@ -192,7 +192,7 @@ function animate4(){
             {  backgroundColor: "white",borderColor: "black"  }
         ]
         const timingAppear = {
-            duration: 4000
+            duration: 3000
         }
     
         let animation6 = animationTo6.animate(appear6,timingAppear)
@@ -210,7 +210,7 @@ function animate7(){
         {color:"black",backgroundColor:"#ef00ff"}
     ]
     const timingAppear = {
-        duration: 8000
+        duration: 5000
     }
 
     let animation7 = animationTo7.animate(appear7,timingAppear)
@@ -227,7 +227,7 @@ function animate8(){
         {  backgroundColor: "white",borderColor: "black"}
     ]
     const timingAppear = {
-        duration: 8000
+        duration: 5000
     }
 
     let animation8 = animationTo8.animate(appear8,timingAppear)
