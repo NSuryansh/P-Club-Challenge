@@ -14,73 +14,76 @@ let data;
 
 function givingOptions() {
 
-    const defaultOption = document.createElement("option");
+    const defaultOption = document.createElement("option");//Creating a default option to select the currencies
     defaultOption.value = "default";
     defaultOption.textContent = "Select Currency";
     sourceCurrencyMenu.appendChild(defaultOption);
 
-    const defaultToOption = document.createElement("option");
+    const defaultToOption = document.createElement("option");//Creating a default option to select the currencies
     defaultToOption.value = "default";
     defaultToOption.textContent = "Select To Currency";
     toCurrencyMenu.appendChild(defaultToOption);
 
     allCurrencies.forEach(currency => {
-        const sourceOption = document.createElement("option");
+        const sourceOption = document.createElement("option");//Creating options to select from,for each element of the array allCurrencies
         sourceOption.value = currency;
         sourceOption.textContent = currency;
         sourceCurrencyMenu.appendChild(sourceOption);
         sourceOption.setAttribute("onclick" , "animate()")
 
-        const toOption = document.createElement("option");
+        const toOption = document.createElement("option");//Creating options to select from,for each element of the array allCurrencies
         toOption.value = currency;
         toOption.textContent = currency;
         toCurrencyMenu.appendChild(toOption);
     });
-    main();
+    main();//calling the function to bring the data from the API and storer it in data
 }
 
 givingOptions();
 
-async function main() {
+async function main() {//async function to await for the data to come from the API
     let response = await fetch("https://openexchangerates.org/api/latest.json?app_id=5b58067b61ea4e72a901515ce1c4bf1d");
-    data = await response.json();
-    console.log(data);
+    data = await response.json();//Storing the exchange rates as an object in data 
 }
 
-function Converting_Currency() {
+function Converting_Currency() {//Function to conert the input value
     const source_value = document.getElementById("Source_Value").value
     const Source_Currency = document.getElementById("Source_Currency").value;
     const To_Currency = document.getElementById("To_Currency").value;
     
-    if(source_value){
+    if(source_value){//if there is a value in Source i.e if some one has given a input then finding the converted value
 
-        const Rate1 = data.rates[Source_Currency]
+        const Rate1 = data.rates[Source_Currency]//Converting the value in USD as the base currency for our API is USD
         let inUSD = source_value/Rate1;
-        console.log(inUSD)
         
-        const Rate2 = data.rates[To_Currency]
+        
+        const Rate2 = data.rates[To_Currency]//Converting the value from USD to the currency we need the output in
         let converted_value = inUSD*Rate2;
-        converted_value = Number(converted_value.toFixed(3));
-        console.log(converted_value);
+        converted_value = Number(converted_value.toFixed(3));//Keeping the limit for numbers after decimal to 3
+        
         
         let to_delete = document.getElementById("final_ans")
-        if(to_delete){
+        if(to_delete){//if there is a ans in the output then it will get deleted once the input is changed 
             to_delete.remove()
         }
+        
         let outputDiv = document.querySelector(".converted")
         let ans = document.createElement("div")
         ans.setAttribute("id","final_ans")
         ans.textContent = converted_value
-        outputDiv.append(ans)
+        outputDiv.append(ans)//Apeending the converted value into the output box
 
-        let oneUSD = 1/Rate1;
-        let oneConverted = oneUSD*Rate2
-        oneConverted=Number(oneConverted.toFixed(3));
+        //To find the exchange rate we take Source value as 1
+        
+        let oneUSD = 1/Rate1;//Value in USD
+        let oneConverted = oneUSD*Rate2//Value of 1 Source Currency into the currency you want the output in
+        oneConverted=Number(oneConverted.toFixed(3));//Keeping the limit for numbers after decimal to 3
         let lastans = document.querySelector(".boxlast")
         let ltext = document.createElement("span")
         ltext.innerHTML = "1" + Source_Currency + "=" + oneConverted + To_Currency;
-        lastans.append(ltext)
+        lastans.append(ltext)//Apeending the converted value into the output box
     }else{
+        //if there is a ans in the output then it will get deleted if the input becomes empty
         let to_delete = document.getElementById("final_ans")
         if(to_delete){
             to_delete.remove()
@@ -88,9 +91,7 @@ function Converting_Currency() {
     }
 }
 
-function GivingInput(){
-
-}
+//8 Functions to animate the boxes to come appear once the input has been given in the precceding box
 function animate1() {
     let animationTo = document.getElementById("To_Currency");
    
@@ -237,6 +238,7 @@ function animate8(){
     };
 }
 
+//Functions to give the text in the FAQ box when the mouse is hovered on the plus sign
 document.addEventListener("DOMContentLoaded", function () {
     let plus1Image = document.getElementById("plus1");
     let toappened = document.getElementById("faq1")
